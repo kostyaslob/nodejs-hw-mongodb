@@ -14,8 +14,8 @@ export const setupServer = () => {
 
     app.use(
         express.json({
-            type: ["application/json', 'application/vnd.api+json"],
-            limit: "100kb",
+            type: ["application/json", "application/vnd.api+json"],
+
         }),
     );
     app.use(cors());
