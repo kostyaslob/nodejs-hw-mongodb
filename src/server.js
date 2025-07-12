@@ -12,7 +12,12 @@ const PORT = Number(getEnvVar("PORT", "3000"));
 export const setupServer = () => {
     const app = express();
 
-    app.use(express.json());
+    app.use(
+        express.json({
+            type: ["application/json', 'application/vnd.api+json"],
+            limit: "100kb",
+        }),
+    );
     app.use(cors());
 
     app.use(
@@ -23,7 +28,7 @@ export const setupServer = () => {
         }),
     );
 
-    app.get(ContactsRouter);
+    app.use(ContactsRouter);
 
     app.use(notFoundHandler);
 
