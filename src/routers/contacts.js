@@ -5,8 +5,8 @@ import {
     getContactByIdController,
     createContactController,
     deleteContactController,
-    patchContactController,
     upsertContactController,
+    patchContactController,
 } from "../controllers/contacts.js";
 
 
