@@ -11,7 +11,7 @@ export const errorHandler = (error, req, res, next) => {
         return;
     }
 
-    res.stastu(500).json({
+    res.status(500).json({
         status: 500,
 		message: "Something went wrong",
 		data: error.message,
