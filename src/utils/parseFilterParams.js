@@ -7,7 +7,9 @@ const parseType = (type) => {
 };
 
 const parseIsFavourite = (isFavourite) => {
-    return typeof isFavourite === "boolean" ? isFavourite : undefined;
+    if (isFavourite === "true") return true;
+    if (isFavourite === "false") return false;
+    return undefined;
 };
 
 export const parseFilterParams = (query) => {
@@ -17,7 +19,7 @@ export const parseFilterParams = (query) => {
     const parsedIsFavourite = parseIsFavourite(isFavourite);
 
     return {
-        contactType: parsedType,
+        type: parsedType,
         isFavourite: parsedIsFavourite,
     };
 };
