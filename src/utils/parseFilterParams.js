@@ -9,7 +9,7 @@ const parseType = (type) => {
 const parseIsFavourite = (isFavourite) => {
     if (isFavourite === "true") return true;
     if (isFavourite === "false") return false;
-    return undefined;
+    return;
 };
 
 export const parseFilterParams = (query) => {
