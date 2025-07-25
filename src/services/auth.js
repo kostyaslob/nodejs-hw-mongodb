@@ -50,3 +50,7 @@ export const loginUser = async (payload) => {
     });
 };
 
+export const logoutUser = async (sessionId) => {
+    await SessionCollection.deleteOne({ _id: sessionId });
+};
+
