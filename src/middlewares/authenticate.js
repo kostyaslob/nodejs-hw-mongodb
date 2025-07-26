@@ -11,7 +11,7 @@ export const authenticate = async (req, res, next) => {
         return;
     }
 
-    const bearer = authHeader.split(' ')[0];
+    const bearer = authHeader.split(" ")[0];
     const token = authHeader.split(" ")[1];
 
     if (bearer !== "Bearer" || !token) {
@@ -20,7 +20,7 @@ export const authenticate = async (req, res, next) => {
     }
 
     const session = await SessionCollection.findOne({
-        acessToken: token
+        accessToken: token
     });
 
     if (!session) {
