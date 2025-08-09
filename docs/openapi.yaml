@@ -17,6 +17,8 @@ servers:
   - url: https://example.com/api/v1
 paths:
   /contacts:
+    get:
+      $ref: ../swagger/paths/contacts/get.yaml
     post:
       $ref: ../swagger/paths/contacts/post.yaml
   /contacts/{contactId}:

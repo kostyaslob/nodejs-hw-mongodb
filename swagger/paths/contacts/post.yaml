@@ -45,7 +45,7 @@ requestBody:
             format: binary
 responses:
   "201":
-    description: Creates a con
+    description: Creates a contact
     content:
       application/json:
         schema:
