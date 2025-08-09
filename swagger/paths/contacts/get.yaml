@@ -21,7 +21,7 @@ parameters:
     schema:
       type: string
       example: "name"
-      description: "All contacts fields can be mentioned. Default value - _id"
+    description: "All contacts fields can be mentioned. Default value - _id"
   - in: query
     name: sortOrder
     schema:
