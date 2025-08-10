@@ -14,7 +14,7 @@
       "url": "http://localhost:3000"
     },
     {
-      "url": "https://example.com/api/v1"
+      "url": "https://contacts-app-mbvh.onrender.com"
     }
   ],
   "tags": [
@@ -870,7 +870,7 @@
           "400": {
             "description": "Bad request"
           },
-          "401": {
+          "404": {
             "description": "Not Found",
             "content": {
               "application/json": {
@@ -884,7 +884,7 @@
                   "properties": {
                     "status": {
                       "type": "integer",
-                      "example": 401
+                      "example": 404
                     },
                     "message": {
                       "type": "string",
