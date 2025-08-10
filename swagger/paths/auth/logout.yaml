@@ -1,0 +1,15 @@
+tags:
+  - Auth
+summary: Logout
+operationId: logout
+description: Logout
+security: []
+responses:
+  "204":
+    description: No Content
+  "400":
+    description: Bad request
+  "401":
+    description: UnauthorizedError
+  "500":
+    description: Server error
