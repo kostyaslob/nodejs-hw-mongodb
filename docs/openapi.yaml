@@ -14,7 +14,7 @@ tags:
     description: Operations about contacts.
 servers:
   - url: http://localhost:3000
-  - url: https://example.com/api/v1
+  - url: https://contacts-app-mbvh.onrender.com
 paths:
   /contacts:
     get:
@@ -43,6 +43,9 @@ paths:
   /auth/send-reset-email:
     post:
       $ref: ../swagger/paths/auth/send-reset-email.yaml
+  /auth/reset-password:
+    post:
+      $ref: ../swagger/paths/auth/reset-password.yaml
 
 components:
   securitySchemes:
